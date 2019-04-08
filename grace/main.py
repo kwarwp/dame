@@ -24,7 +24,7 @@
 
 """
 from _spy.vitollino.main import JOGO, STYLE
-STYLE = dict(width=900,height="700px")
+STYLE.update(dict(width=900,height="700px"))
 DEBUG = False
 
 
