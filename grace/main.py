@@ -24,14 +24,14 @@
 
 """
 from _spy.vitollino.main import JOGO, STYLE
-STYLE = dict(with=900,height="700px")
+STYLE = dict(width=900,height="700px")
 DEBUG = False
 
 
 class Sherlock:
     REF = "https://i.imgur.com/{}.png"
     MAPA = {
-        'A': {'N': 'aLEjWgB', 'L': 'sivjAnO', 'S': 'otHJhF0'},
+        'A': {'N': 'aLEjWgB', 'L': 'sivjAnO', 'O': 'IZkiaDs', 'S': 'otHJhF0'},
         'B': {'N': '40K5493', 'L': 'R3bpFXD', 'O': 'dlxY8hi', 'S': 'eYM3Yp9'},
         'C': {'N': 'YJfnhy9', 'L': '94V79TA', 'O': 'Fzz2FNz', 'S': 'LFKXlB1'},
         'D': {'N': '1uWH7rU', 'L': 'b0FcjLq', 'O': '406g75C', 'S': 'HQBtUoQ'},
@@ -43,10 +43,10 @@ class Sherlock:
         'J': {'N': 'MMO11Dv', 'S': 'RkWPb8Z', 'L': 'btv0qfO', 'O': 'lDezYKu'},
         'K': {'N': 'Tx9Q6vW', 'S': 'rrI94Xh', 'L': 'R6gON2E', 'O': 'Mn69uua'},
         'L': {'N': 'oAu9lkN', 'S': 'xTjd7UV', 'L': 'JMQAGvc', 'O': 'UJBMKY7'},
-        'M': {'N': 'qoHwGLW', 'S': '5P3U1Ai', 'L': '1UXBodl', 'O': 'AC2KgZg'},
+        'M': {'N': 'ibRxMKV', 'S': 'HtRKv7X', 'L': '1UXBodl', 'O': 'AC2KgZg'},
         'N': {'N': 'KVlUf94', 'L': 'f6vR0tY', 'O': 'GE8IsRM', 'S': 'RfUP0ez'},
-        'O': {'N': 'lOT96Hr', 'S': 'HtRKv7X', 'L': 'uvPjc14', 'O': 'I7Gn0Xx'},
-        'P': {'N': 'OutDPac', 'S': 'sAIhp4b', 'L': 'dc2Ol59', 'O': '9IBwxjI'},
+        'O': {'N': 'qoHwGLW', 'S': 'OKZGVUX', 'L': 'dc2Ol59', 'O': 'I7Gn0Xx'},
+        'P': {'N': 'OutDPac', 'S': 'sAIhp4b', 'L': 'nE8ti2z', 'O': '9IBwxjI'},
         'Q': {'N': 'JRYlZeN', 'S': '4BCiuYZ', 'L': 'ek4cwBg', 'O': 'vmZHZmr'},
         'R': {'N': 'qnjq624', 'S': 'nZvwdhP', 'L': 'gS4rXYk', 'O': '2Z36mLI'}
     }
