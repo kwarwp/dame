@@ -1,7 +1,15 @@
 # dame.danae.main.py
 from grace.main import main as grace
 from _spy.vitollino.main import Codigo
-TEXTO = """'''Se você encontrou este livro
+TEXTO = """ DIÁRIO DE PESQUISA
+Se você encontrou este livro
+é porque nesta casa aconteceu
+um crime.
+Preciso que você encontre as
+outras páginas para podermos
+solucionar este mistério
+'''"""
+TEXTO1 = """'''Se você encontrou este livro
 é porque nesta casa aconteceu
 um crime.
 '''"""
@@ -18,8 +26,9 @@ class Livro:
         cena_livro = self.casa.vit.c(_livro_aberto, self, self)
         livro.entra(self.casa.sala.B.leste)
         texto = Codigo(
-             codigo=TEXTO, topo="Importando um módulo",
-             vai=self.vai, style=dict(left=350, top=10, width=600))
+             codigo=TEXTO1, topo=TEXTO,
+             vai=self.vai, style=dict(left=450, top=10, width=400))
+        texto.entra(cena_livro)
         def abre_livro(*_):
             self.clica_livro = lambda: None
             cena_livro.vai()
