@@ -17,12 +17,17 @@ outras páginas para podermos
 solucionar este mistério
 """,
 """<div style="width:100%; text-align: center;">
-<H2>Página 1</H2>
+<H2>Página 1 Ácido Desoxirribonucleico</H2>
 <br>
 <img src="https://i.imgur.com/TMzO0uw.jpg" width=300 />
 </div>
 <br/><br/>
-O DNA (ácido desoxirribonucleico) é um tipo de ácido nucleico que possui destaque por armazenar a informação genética da grande maioria dos seres vivos. Essa molécula é formada por nucleotídeos e apresenta, geralmente, a forma de uma dupla-hélice. Nos organismos eucarióticos, o DNA é encontrado no núcleo da célula, nas mitocôndrias e nos cloroplastos. Nos procariontes, o DNA está localizado em uma região que não é delimitada por membrana, denominada de nucleoide.
+O DNA (ácido desoxirribonucleico) é um tipo de ácido nucleico
+que possui destaque por armazenar a informação genética da grande
+maioria dos seres vivos. Essa molécula é formada por nucleotídeos e apresenta,
+geralmente, a forma de uma dupla-hélice. Nos organismos eucarióticos,
+o DNA é encontrado no núcleo da célula, nas mitocôndrias e nos cloroplastos.
+Nos procariontes, o DNA está localizado em uma região que não é delimitada por membrana, denominada de nucleoide.
 """,
 """<div style="width:100%; text-align: center;">
 <H2>Página 2</H2>
