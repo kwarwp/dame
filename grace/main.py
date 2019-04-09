@@ -157,7 +157,7 @@ class Sherlock:
 
 
 def main(bry=JOGO):
-    Sherlock(bry)
+    return Sherlock(bry)
 
 
 if __name__ == '__main__':
