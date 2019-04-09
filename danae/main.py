@@ -2,8 +2,10 @@
 from grace.main import main as grace
 
 
-class Livro
+class Livro:
     def __init__(self, casa):
+        livro_fechado = "https://i.imgur.com/ty2fWuE.gif"
+        livro_aberto = "https://i.imgur.com/sI177hV.jpg"
         self.casa = casa()
 
 
