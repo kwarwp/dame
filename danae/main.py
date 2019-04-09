@@ -14,6 +14,7 @@ class Livro:
         cena_livro = self.casa.vit.c(_livro_aberto, self, self)
         livro.entra(self.casa.sala.B.leste)
         def abre_livro(*_):
+            self.clica_livro = lambda: None
             cena_livro.vai()
         def pega_livro(*_):
             self.clica_livro = abre_livro
@@ -22,6 +23,7 @@ class Livro:
         livro.vai = lambda *_: self.clica_livro()
         
     def vai(self, *_):
+        self.clica_livro = abre_livro
         self.casa.vit.i.cena.vai()
 
 
