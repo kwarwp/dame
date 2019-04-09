@@ -52,9 +52,11 @@ class Livro:
     def __init__(self, casa):
         self.pagina_atual = 0
         class PaginaAnterior:
+            def __init__(self, livro):
+                self.livro = livro
             def vai(self, *_):
-                self.pagina_atual -= 1
-                self.texto.topo.html = TEXTO[self.pagina_atual]
+                self.livro.pagina_atual -= 1
+                self.livro.texto.topo.html = TEXTO[self.livro.pagina_atual]
         class PaginaPosterior:
             def vai(self, *_):
                 self.pagina_atual += 1
@@ -67,7 +69,7 @@ class Livro:
         self.casa.vit.i.inicia()
         livro = self.casa.vit.a(_livro_fechado, "caderno de notas",
             style=dict(left=280, top=500, width=60, height="60px"))
-        cena_livro = self.casa.vit.c(_livro_aberto, PaginaAnterior(), self)
+        cena_livro = self.casa.vit.c(_livro_aberto, PaginaAnterior(self), self)
         livro.entra(self.casa.sala.B.leste)
         self.texto = texto = Codigo(
              codigo="", topo=TEXTO[0],
