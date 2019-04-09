@@ -4,16 +4,21 @@ from _spy.vitollino.main import Codigo
 DNA = "https://i.imgur.com/tEtZk2X.jpg"
 
 TEXTO = ["""<div style="width:100%; text-align: center;">
-<H2>DIÁRIO DE PESQUISA</H2>
+<H2>DIÁRIO DE EMERGÊNCIA</H2>
 <br>
 <img src="https://i.imgur.com/tEtZk2X.jpg" width=200 />
 </div>
 <br/><br/>
+Caro visitante, desculpe a intromissão
+no seu lazer, espero contar com a sua ajuda.
 Se você encontrou este livro
 é porque nesta casa aconteceu
 um crime.<br/>
 Preciso que você encontre as
-outras páginas para podermos
+outras páginas, que por segurança foram
+espalhadas por esta casa. E por segurança
+dobrada, as suas informações foram encobertas por enigmas. 
+Por favor, ache as soluções para podermos
 solucionar este mistério
 """,
 """<div style="width:100%; text-align: center;">
