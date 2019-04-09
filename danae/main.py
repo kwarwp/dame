@@ -4,7 +4,7 @@ from grace.main import main as grace
 
 class Livro:
     def __init__(self, casa):
-        self.clica_livro=lambda: None
+        self.clica_livro = lambda: None
         _livro_fechado = "https://i.imgur.com/ty2fWuE.gif"
         _livro_aberto = "https://i.imgur.com/sI177hV.jpg"
         self.casa = casa()
@@ -15,10 +15,10 @@ class Livro:
         def abre_livro(*_):
             cena_livro.vai()
         def pega_livro(*_):
-            self.clica_livro=abre_livro
+            self.clica_livro = abre_livro
             self.casa.vit.i.bota(livro)
         self.clica_livro = pega_livro
-        livro.vai = self.clica_livro
+        livro.vai = lambda *_: self.clica_livro()
         
     def vai(self, *_):
         self.casa.vit.i.cena.vai()
