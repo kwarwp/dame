@@ -37,17 +37,19 @@ class Livro:
              vai=self.vai, style=dict(left=440, top=20, width=380))
         texto.entra(cena_livro)
         def abre_livro(*_):
-            self.clica_livro = lambda: None
+            self.clica_livro = lambda: self.vai()
             cena_livro.vai()
         def pega_livro(*_):
             self.clica_livro = abre_livro
             self.casa.vit.i.bota(livro)
+        self.abre_livro = abre_livro
         self.clica_livro = pega_livro
         livro.vai = lambda *_: self.clica_livro()
         
     def vai(self, *_):
-        self.clica_livro = abre_livro
-        self.casa.vit.i.cena.vai()
+        self.clica_livro = self.abre_livro
+        self.casa.sala.B.leste.vai()
+        # self.casa.vit.i.cena.vai()
 
 
 def main(bry=grace):
