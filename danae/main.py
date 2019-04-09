@@ -67,10 +67,10 @@ class Livro:
         self.casa.vit.i.inicia()
         livro = self.casa.vit.a(_livro_fechado, "caderno de notas",
             style=dict(left=280, top=500, width=60, height="60px"))
-        cena_livro = self.casa.vit.c(_livro_aberto, PaginaAnterior(), PaginaPosterior())
+        cena_livro = self.casa.vit.c(_livro_aberto, Livro.PaginaAnterior(), Livro.PaginaPosterior())
         livro.entra(self.casa.sala.B.leste)
         self.texto = texto = Codigo(
-             codigo=TEXTO1, topo=TEXTO,
+             codigo="", topo=TEXTO[0],
              vai=self.pagina, style=dict(left=440, top=20, width=380))
         texto.entra(cena_livro)
         def abre_livro(*_):
