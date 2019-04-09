@@ -67,14 +67,14 @@ class Livro:
         self.casa.vit.i.inicia()
         livro = self.casa.vit.a(_livro_fechado, "caderno de notas",
             style=dict(left=280, top=500, width=60, height="60px"))
-        cena_livro = self.casa.vit.c(_livro_aberto, Livro.PaginaAnterior(), Livro.PaginaPosterior())
+        cena_livro = self.casa.vit.c(_livro_aberto, PaginaAnterior(), self)
         livro.entra(self.casa.sala.B.leste)
         self.texto = texto = Codigo(
              codigo="", topo=TEXTO[0],
              vai=self.pagina, style=dict(left=440, top=20, width=380))
         texto.entra(cena_livro)
         def abre_livro(*_):
-            self.clica_livro = lambda: self.vai()
+            self.clica_livro = lambda: self.fecha_livro()
             self.onde = self.casa.vit.i.cena
             cena_livro.vai()
         def pega_livro(*_):
@@ -88,9 +88,13 @@ class Livro:
         self.texto1.vai()
         event.stopPropagation()
         
-    def vai(self, *_):
+    def fecha_livro(self, *_):
         self.clica_livro = self.abre_livro
         self.onde.vai()
+        
+    def vai(self, *_):
+        self.pagina_atual += 1
+        self.texto.topo.html = TEXTO[self.pagina_atual]
 
 
 def main(bry=grace):
