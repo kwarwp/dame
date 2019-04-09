@@ -156,7 +156,7 @@ class Sherlock:
         self.sala.A.norte.vai()
 
 
-def main(bry=None):
+def main(bry=JOGO):
     Sherlock(bry)
 
 
