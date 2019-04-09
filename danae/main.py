@@ -24,6 +24,7 @@ um crime.
 class Livro:
     def __init__(self, casa):
         self.clica_livro = lambda: None
+        self.onde = None
         _livro_fechado = "https://i.imgur.com/ty2fWuE.gif"
         _livro_aberto = "https://i.imgur.com/sI177hV.jpg"
         self.casa = casa()
@@ -32,12 +33,17 @@ class Livro:
             style=dict(left=280, top=500, width=60, height="60px"))
         cena_livro = self.casa.vit.c(_livro_aberto, self, self)
         livro.entra(self.casa.sala.B.leste)
-        texto = Codigo(
+        self.texto = texto = Codigo(
              codigo=TEXTO1, topo=TEXTO,
-             vai=self.vai, style=dict(left=440, top=20, width=380))
+             vai=self.pagina, style=dict(left=440, top=20, width=380))
+        texto.entra(cena_livro)
+        self.texto1 = texto1 = Codigo(
+             codigo=TEXTO1, topo=TEXTO,
+             vai=lambda *_: texto.vai, style=dict(left=40, top=20, width=380))
         texto.entra(cena_livro)
         def abre_livro(*_):
             self.clica_livro = lambda: self.vai()
+            self.onde = self.casa.vit.i.cena
             cena_livro.vai()
         def pega_livro(*_):
             self.clica_livro = abre_livro
@@ -46,10 +52,13 @@ class Livro:
         self.clica_livro = pega_livro
         livro.vai = lambda *_: self.clica_livro()
         
+    def pagina(self, event, *_):
+        self.texto1.vai()
+        event.stopPropagation()
+        
     def vai(self, *_):
         self.clica_livro = self.abre_livro
-        self.casa.sala.B.leste.vai()
-        # self.casa.vit.i.cena.vai()
+        self.onde.vai()
 
 
 def main(bry=grace):
