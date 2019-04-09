@@ -3,15 +3,9 @@ from grace.main import main as grace
 from _spy.vitollino.main import Codigo
 DNA = "https://i.imgur.com/tEtZk2X.jpg"
 
-TEXTO = """<div style="width:100%; text-align: center;>
+TEXTO = """<div style="width:100%; text-align: center;">
 <H2>DIÁRIO DE PESQUISA</H2>
-</div>
 <br>
-
-<div style="width:100%;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;">
 <img src="https://i.imgur.com/tEtZk2X.jpg" width=200 />
 </div>
 <br/><br/>
