@@ -10,7 +10,7 @@ class Livro:
         self.casa = casa()
         self.casa.vit.i.inicia()
         livro = self.casa.vit.a(_livro_fechado, "caderno de notas",
-            style=dict(left=20, top=600, width=40, height="40px"))
+            style=dict(left=280, top=500, width=60, height="60px"))
         cena_livro = self.casa.vit.c(_livro_aberto, self, self)
         livro.entra(self.casa.sala.B.leste)
         def abre_livro(*_):
