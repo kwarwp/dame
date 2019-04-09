@@ -1,6 +1,10 @@
 # dame.danae.main.py
 from grace.main import main as grace
-
+from _spy.vitollino.main import Codigo
+TEXTO = """'''Se você encontrou este livro
+é porque nesta casa aconteceu
+um crime.
+'''"""
 
 class Livro:
     def __init__(self, casa):
@@ -13,6 +17,9 @@ class Livro:
             style=dict(left=280, top=500, width=60, height="60px"))
         cena_livro = self.casa.vit.c(_livro_aberto, self, self)
         livro.entra(self.casa.sala.B.leste)
+        texto = Codigo(
+             codigo=TEXTO, topo="Importando um módulo",
+             vai=self.vai, style=dict(left=350, top=10, width=600))
         def abre_livro(*_):
             self.clica_livro = lambda: None
             cena_livro.vai()
