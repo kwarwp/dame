@@ -1,10 +1,10 @@
 # dame.danae.main.py
 from grace.main import main as grace
 from _spy.vitollino.main import Codigo
-TEXTO = """ DIÁRIO DE PESQUISA
+TEXTO = """ <H2>DIÁRIO DE PESQUISA</H2>
 Se você encontrou este livro
 é porque nesta casa aconteceu
-um crime.
+um crime.<br/>
 Preciso que você encontre as
 outras páginas para podermos
 solucionar este mistério
@@ -27,7 +27,7 @@ class Livro:
         livro.entra(self.casa.sala.B.leste)
         texto = Codigo(
              codigo=TEXTO1, topo=TEXTO,
-             vai=self.vai, style=dict(left=450, top=10, width=400))
+             vai=self.vai, style=dict(left=440, top=20, width=380))
         texto.entra(cena_livro)
         def abre_livro(*_):
             self.clica_livro = lambda: None
