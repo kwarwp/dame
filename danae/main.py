@@ -1,14 +1,19 @@
 # dame.danae.main.py
 from grace.main import main as grace
 from _spy.vitollino.main import Codigo
-TEXTO = """ <H2>DIÁRIO DE PESQUISA</H2>
+DNA = "https://i.imgur.com/tEtZk2X.jpg"
+
+TEXTO = """&nbsp;&nbsp;&nbsp;&nbsp;<H2>DIÁRIO DE PESQUISA</H2>
+<br/>
+<br/>
+<img src="https://i.imgur.com/tEtZk2X.jpg" width=200 /><br/>
 Se você encontrou este livro
 é porque nesta casa aconteceu
 um crime.<br/>
 Preciso que você encontre as
 outras páginas para podermos
 solucionar este mistério
-'''"""
+"""
 TEXTO1 = """'''Se você encontrou este livro
 é porque nesta casa aconteceu
 um crime.
