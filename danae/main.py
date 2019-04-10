@@ -63,7 +63,7 @@ um crime.
 class Livro:
     def __init__(self, casa):
         self.pagina_atual = 0
-        self.pagina_final = 1
+        self.pagina_final = 0
         class PaginaAnterior:
             def __init__(self, livro):
                 self.livro = livro
