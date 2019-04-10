@@ -89,7 +89,7 @@ class Livro:
         livro.entra(self.casa.sala.B.leste)
         self.texto = texto = Codigo(
              codigo="", topo=TEXTO[0],
-             vai=self.pagina, style=dict(left=440, top=20, width=380))
+             style=dict(left=440, top=20, width=380))
         texto.entra(cena_livro)
         def abre_livro(*_):
             self.clica_livro = lambda: self.fecha_livro()
