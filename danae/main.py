@@ -101,6 +101,14 @@ class Livro:
         self.abre_livro = abre_livro
         self.clica_livro = pega_livro
         livro.vai = lambda *_: self.clica_livro()
+        class Aviso:
+            def __init__(self, vit):
+                porta = vit.sala.C.sul
+                self.aviso = vit.n(porta, "Esta Porta Está Trancada")
+                porta.meio = self
+            def vai(self, *_):
+                self.aviso.vai()
+        aviso = Aviso(self.casa.vit)
         
     def pagina(self, event, *_):
         self.texto1.vai()
