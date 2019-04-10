@@ -27,12 +27,19 @@ solucionar este mistério
 <img src="https://i.imgur.com/TMzO0uw.jpg" width=300 />
 </div>
 <br/><br/>
-O DNA (ácido desoxirribonucleico) é um tipo de ácido nucleico
-que possui destaque por armazenar a informação genética da grande
-maioria dos seres vivos. Essa molécula é formada por nucleotídeos e apresenta,
-geralmente, a forma de uma dupla-hélice. Nos organismos eucarióticos,
-o DNA é encontrado no núcleo da célula, nas mitocôndrias e nos cloroplastos.
-Nos procariontes, o DNA está localizado em uma região que não é delimitada por membrana, denominada de nucleoide.
+O DNA (ácido desoxirribonucleico) é um
+tipo de ácido nucleico que possui
+destaque por armazenar a informação
+genética da grande maioria dos seres
+vivos. Essa molécula é formada por
+nucleotídeos e apresenta,geralmente,
+a forma de uma dupla-hélice. Nos
+organismos eucarióticos,o DNA é
+encontrado no núcleo da célula, nas
+mitocôndrias e nos cloroplastos.
+Nos procariontes, o DNA está localizado
+em uma região que não é delimitada por
+membrana, denominada de nucleoide.
 """,
 """<div style="width:100%; text-align: center;">
 <H2>Página 2</H2>
@@ -56,10 +63,14 @@ um crime.
 class Livro:
     def __init__(self, casa):
         self.pagina_atual = 0
+        self.pagina_final = 1
         class PaginaAnterior:
             def __init__(self, livro):
                 self.livro = livro
             def vai(self, *_):
+                if self.pagina_atual == 0:
+                    self.livro.fecha_livro()
+                    return False
                 self.livro.pagina_atual -= 1
                 self.livro.texto.topo.html = TEXTO[self.livro.pagina_atual]
         class PaginaPosterior:
@@ -100,6 +111,9 @@ class Livro:
         self.onde.vai()
         
     def vai(self, *_):
+        if self.pagina_atual == self.pagina_final:
+            self.fecha_livro()
+            return False
         self.pagina_atual += 1
         self.texto.topo.html = TEXTO[self.pagina_atual]
 
