@@ -114,17 +114,17 @@ class Livro:
                 quadro = vit.sala.B.sul
                 self.vit, self.nova = vit, nova
                 self.aviso = vit.n(quadro, "Você acha uma folha e cola no caderno", foi=nova)
-                self.papel = vit.a("https://i.imgur.com/YU3IFrt.jpg",
-                    style=dict(left=150, top=500, width=10, height="30px"), cena=quadro, vai=self.vai)
+                self.papel = vit.a("https://i.imgur.com/YU3IFrt.jpg", tit="pagina1",
+                    style=dict(left=155, top=500, width=16, height="60px"), cena=quadro, vai=self.vai)
             def vai(self, *_):
                 self.aviso.vai()
-                self.vit.i.bota("pg1", self.papel)
-                self.vit.i.tira("pg1")
+                self.vit.i.bota(self.papel)
+                self.vit.i.tira("pagina1")
                 self.nova()
                 event.stopPropagation()
-        pagina = Pagina(self.casa.vit, self.pagina)
+        pagina = Pagina(self.casa.vit, self.nova_pagina)
         
-    def pagina(self, event=0):
+    def nova_pagina(self, *_):
         self.pagina_atual = 1
         self.pagina_final = 1
         event.stopPropagation()
