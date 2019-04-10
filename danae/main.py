@@ -110,20 +110,21 @@ class Livro:
                 self.aviso.vai()
         aviso = Aviso(self.casa.vit)
         class Pagina:
-            def __init__(self, vit, nova):
+            def __init__(self, vit):
                 quadro = vit.sala.B.sul
-                self.vit = vit
+                self.vit, self.nova = vit, nova
                 self.aviso = vit.n(quadro, "Você acha uma folha e cola no caderno", foi=nova)
                 self.papel = vit.a("https://i.imgur.com/d1nyTmx.jpg",
                     style=dict(left=140, top=500, width=8, height="16px"), cena=quadro, vai=self.vai)
             def vai(self, *_):
                 self.aviso.vai()
+                self.nova()
                 self.vit.i.bota(self.papel)
                 self.vit.i.tira(self.papel)
                 event.stopPropagation()
         pagina = Pagina(self.casa.vit, self.pagina)
         
-    def pagina(self, event, *_):
+    def pagina(self, event=0):
         self.pagina_atual = 1
         self.pagina_final = 1
         event.stopPropagation()
