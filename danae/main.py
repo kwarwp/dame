@@ -110,12 +110,12 @@ class Livro:
                 self.aviso.vai()
         aviso = Aviso(self.casa.vit)
         class Pagina:
-            def __init__(self, vit):
+            def __init__(self, vit, nova):
                 quadro = vit.sala.B.sul
                 self.vit, self.nova = vit, nova
                 self.aviso = vit.n(quadro, "Você acha uma folha e cola no caderno", foi=nova)
                 self.papel = vit.a("https://i.imgur.com/d1nyTmx.jpg",
-                    style=dict(left=140, top=500, width=8, height="16px"), cena=quadro, vai=self.vai)
+                    style=dict(left=150, top=500, width=10, height="30px"), cena=quadro, vai=self.vai)
             def vai(self, *_):
                 self.aviso.vai()
                 self.nova()
