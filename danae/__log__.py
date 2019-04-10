@@ -136,3 +136,10 @@ Traceback (most recent call last):
     pagina = Pagina(self.casa.vit, self.pagina)
 TypeError: __init__() takes 2 positional arguments but more were given
 '''},
+{'date': 'Tue Apr 09 2019 23:25:05.119 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 117
+  self.papel = vit.a("https://i.imgur.com/YU3IFrt.jpg", tit="pagina1"
+                                                                                           ^
+SyntaxError: invalid syntax
+'''},
