@@ -92,3 +92,26 @@ Traceback (most recent call last):
     self.aviso = vit.n(porta, "Você acha uma folha e cola no caderno", foi=nova)
 NameError: name 'porta' is not defined
 '''},
+{'date': 'Tue Apr 09 2019 22:49:07.287 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''sala_do_jogo.A.norte <_spy.vitollino.main.Sala object> <_spy.vitollino.main.Cena object> https://i.imgur.com/aLEjWgB.png
+Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 147
+    main(grace)
+  module <module> line 143
+    return Livro(bry)
+  module <module> line 123
+    pagina = Pagina(self.casa.vit, self.pagina)
+  module <module> line 118
+    porta.meio = self
+NameError: name 'porta' is not defined
+'''},
