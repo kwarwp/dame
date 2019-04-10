@@ -120,9 +120,10 @@ class Livro:
                 self.aviso.vai()
                 self.vit.i.bota(self.papel)
                 self.vit.i.tira("pagina1")
-                self.nova()
+                self.nova.pagina_final = 1
+                #self.nova.pagina_atual = 1
                 event.stopPropagation()
-        pagina = Pagina(self.casa.vit, self.nova_pagina)
+        pagina = Pagina(self.casa.vit, self)
         
     def nova_pagina(self, *_):
         self.pagina_atual = 1
