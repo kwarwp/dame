@@ -6,8 +6,8 @@ from random import shuffle
 
 DICT = {}
 COLA_NO_CADERNO = "Você acha uma folha e cola no caderno"
-ENIGMA1 = "á?ido,#desoxirribonuc?eico,#t?po,#??? possui,#armaze??r,#" \
-          "in?ormação,#genét?ca,#?rande,#moléc?la,#fo?m??a p?r,#nu?leotídeos,#" \
+ENIGMA1 = "á?ido,#desoxirribonuc?eico,#t?po,#???Â possui,#armaze??r,#" \
+          "in?ormação,#genét?ca,#?rande,#moléc?la,#fo?m??aÂ p?r,#nu?leotídeos,#" \
           "ap?esenta,#f?r?a,#?rgani?mo?,#eucariótic?s,#?it?côndrias".split("#")
 
 DNA = "https://i.imgur.com/tEtZk2X.jpg"
@@ -237,6 +237,7 @@ class Livro:
             def __init__(self, img="", tit="", cena=None, drag=True, drop=False, drags=None, jogo=self.jogo, **_kwargs):
                 super().__init__(tit=f"{tit}", **_kwargs)
                 self._drag = self._over = self._drop = self._dover = self.vai = lambda *_: False
+                self.jogo = jogo
                 elt_style = {"background-image": f"url('{img}')", "background-size": "cover", "cursor": "move"}
                 inv_style = {'opacity': "inherited", 'width': 30, 'height': "30px",
                              'min-height': '30px', 'float': 'left', 'position': 'unset'}
