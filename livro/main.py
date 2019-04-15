@@ -6,8 +6,8 @@ from random import shuffle
 
 DICT = {}
 COLA_NO_CADERNO = "Você acha uma folha e cola no caderno"
-ENIGMA1 = "á?ido,#desoxirribonuc?eico,#t?po,#???ÂÂ possui,#armaze??r,#" \
-          "in?ormação,#genét?ca,#?rande,#moléc?la,#fo?m??aÂÂ p?r,#nu?leotídeos,#" \
+ENIGMA1 = "á?ido,#desoxirribonuc?eico,#t?po,#???ÂÂÂ possui,#armaze??r,#" \
+          "in?ormação,#genét?ca,#?rande,#moléc?la,#fo?m??aÂÂÂ p?r,#nu?leotídeos,#" \
           "ap?esenta,#f?r?a,#?rgani?mo?,#eucariótic?s,#?it?côndrias".split("#")
 
 DNA = "https://i.imgur.com/tEtZk2X.jpg"
@@ -327,7 +327,7 @@ class Livro:
 
             @staticmethod
             def drag_over(ev):
-                ev.data.dropEffect = 'move'
+                # ev.data.dropEffect = 'move'
                 # ev.dataTransfer.dropEffect = "move"
                 # ev.preventDefault()
                 return False
@@ -335,9 +335,9 @@ class Livro:
             def drop(self, ev):
                 ev.preventDefault()
                 ev.stopPropagation()
-                print("def drop(self, ev):")
-                # src_id = ev.data['text']
-                src_id = ev.dataTransfer.getData('text')
+                src_id = ev.data['text']
+                print("def drop(self, ev):", src_id)
+                # src_id = ev.dataTransfer.getData('text')
 
                 self.drags.setdefault(src_id, lambda: None)()
                 self.do_drag(False)
