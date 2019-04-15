@@ -6,8 +6,8 @@ from random import shuffle
 
 DICT = {}
 COLA_NO_CADERNO = "Você acha uma folha e cola no caderno"
-ENIGMA1 = "á?ido,#desoxirribonuc?eico,#t?po,#???&nbsp;possui,#armaze??r,#" \
-          "in?ormação,#genét?ca,#?rande,#moléc?la,#fo?m??a&nbsp;p?r,#nu?leotídeos,#" \
+ENIGMA1 = "á?ido,#desoxirribonuc?eico,#t?po,#??? possui,#armaze??r,#" \
+          "in?ormação,#genét?ca,#?rande,#moléc?la,#fo?m??a p?r,#nu?leotídeos,#" \
           "ap?esenta,#f?r?a,#?rgani?mo?,#eucariótic?s,#?it?côndrias".split("#")
 
 DNA = "https://i.imgur.com/tEtZk2X.jpg"
@@ -195,10 +195,9 @@ class Livro:
                     tit="Use este cartão para abrir um baú.", msg="Arraste o cartão até a fechadura.")
                 aviso.vai()
 
-                chave = self.livro.cria_arrastante(
+                chave = self.livro.cria_arrastante(cena=self.jogo.i,
                     drag=True, img="https://i.imgur.com/mdHOJ9y.jpg", tit="cartao que abre bau", vai=aviso.vai)
                 self.jogo.clica_elemento = lambda *_: None
-                self.jogo.i.bota(chave)
                 self.livro.cria_arrastante(
                     drop=True, img="https://i.imgur.com/3V2OwVV.png", tit="arraste o cartão aqui",
                     style=dict(left=500, top="400px", width=50, height="80px"),
@@ -235,12 +234,15 @@ class Livro:
 
         class Elemento(self.jogo.a):
 
-            def __init__(self, img="", tit="", drag=True, drop=False, drags=None, **_kwargs):
+            def __init__(self, img="", tit="", cena=None, drag=True, drop=False, drags=None, jogo=self.jogo, **_kwargs):
                 super().__init__(tit=f"{tit}", **_kwargs)
                 self._drag = self._over = self._drop = self._dover = self.vai = lambda *_: False
-                elt_style = {"background-image": f"url('{img}')", "background-size": "cover", "cursor": "move",
-                             "left": 0, "top": 0}
+                elt_style = {"background-image": f"url('{img}')", "background-size": "cover", "cursor": "move"}
+                inv_style = {'opacity': "inherited", 'width': 30, 'height': "30px",
+                             'min-height': '30px', 'float': 'left', 'position': 'unset'}
                 self.style.update(elt_style)
+                self.style.update(inv_style if (cena == self.jogo.i) else {})
+                self.entra(cena) if cena else None
                 # self.style = elt_style
                 # self.scorer, self.xy = {}, 0
                 # self.elt = html.DIV(Id=tit, title=tit, style=self.style)
