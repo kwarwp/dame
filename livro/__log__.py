@@ -28,3 +28,10 @@ Traceback (most recent call last):
     self.style.update(inv_style if (cena == self.jogo.i) else {})
 AttributeError: 'Elemento' object has no attribute 'jogo'
 '''},
+{'date': 'Mon Apr 15 2019 13:26:22.566 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 201
+  self.livro.cria_arrastante(
+                                                                                  ^
+SyntaxError: invalid syntax
+'''},
