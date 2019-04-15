@@ -6,8 +6,8 @@ from random import shuffle
 
 DICT = {}
 COLA_NO_CADERNO = "Você acha uma folha e cola no caderno"
-ENIGMA1 = "á?ido,#desoxirribonuc?eico,#t?po,#???Â possui,#armaze??r,#" \
-          "in?ormação,#genét?ca,#?rande,#moléc?la,#fo?m??aÂ p?r,#nu?leotídeos,#" \
+ENIGMA1 = "á?ido,#desoxirribonuc?eico,#t?po,#???ÂÂ possui,#armaze??r,#" \
+          "in?ormação,#genét?ca,#?rande,#moléc?la,#fo?m??aÂÂ p?r,#nu?leotídeos,#" \
           "ap?esenta,#f?r?a,#?rgani?mo?,#eucariótic?s,#?it?côndrias".split("#")
 
 DNA = "https://i.imgur.com/tEtZk2X.jpg"
@@ -199,7 +199,8 @@ class Livro:
                     drag=True, img="https://i.imgur.com/mdHOJ9y.jpg", tit="cartao que abre bau", vai=aviso.vai)
                 self.jogo.clica_elemento = lambda *_: None
                 self.livro.cria_arrastante(
-                    drop=True, img="https://i.imgur.com/3V2OwVV.png", tit="arraste o cartão aqui",
+                    drags = {}
+                    drop=True, drag=False, img="https://i.imgur.com/3V2OwVV.png", tit="arraste o cartão aqui",
                     style=dict(left=500, top="400px", width=50, height="80px"),
                     cena=self.jogo.sala.C.leste, vai=aviso.vai)
 
@@ -208,6 +209,7 @@ class Livro:
                 self.jogo.i.bota(self.papel)
                 self.jogo.i.tira(self.tit)
                 self.livro.pagina_final += 1
+                self.livro.pagina_atual += 1
                 self.agora_vai()
                 # self.nova.pagina_atual = 1
                 event.stopPropagation() if event else None
@@ -215,8 +217,8 @@ class Livro:
         return Pagina(**kwargs) if kwargs else Pagina
 
     def nova_pagina(self, event=None):
-        self.pagina_atual = 1
-        self.pagina_final = 1
+        self.pagina_atual += 1
+        self.pagina_final += 1
         event.stopPropagation() if event else None
 
     def fecha_livro(self, *_):
@@ -325,8 +327,8 @@ class Livro:
 
             @staticmethod
             def drag_over(ev):
-                # ev.data.dropEffect = 'move'
-                ev.dataTransfer.dropEffect = "move"
+                ev.data.dropEffect = 'move'
+                # ev.dataTransfer.dropEffect = "move"
                 # ev.preventDefault()
                 return False
 
