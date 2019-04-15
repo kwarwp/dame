@@ -199,7 +199,7 @@ class Livro:
                     drag=True, img="https://i.imgur.com/mdHOJ9y.jpg", tit="cartao que abre bau", vai=aviso.vai)
                 self.jogo.clica_elemento = lambda *_: None
                 self.livro.cria_arrastante(
-                    drags = {}
+                    drags = {"cartao que abre bau": lambda a=aviso: a.vai()},
                     drop=True, drag=False, img="https://i.imgur.com/3V2OwVV.png", tit="arraste o cartão aqui",
                     style=dict(left=500, top="400px", width=50, height="80px"),
                     cena=self.jogo.sala.C.leste, vai=aviso.vai)
