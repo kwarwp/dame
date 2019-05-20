@@ -15,7 +15,7 @@ def funcoes ( ):
     Thor=eThor.vai
     Tiana = Elemento (img =TIANA,tit= "Tiana",style=dict(left=150,top=160,width=60,height=200))
     Tiana.entra(Campo)
-    eTiana=Texto(Campo,"Oi, me chamo Tiana e estou a procura do meu príncipe encantado.Você pode me ajudar?")
+    eTiana=Texto(Campo,"Oi, me chamo Tiana e estou a procura do meu príncipe encantado")
     Tiana=eTiana.vai()
     
     Campo.vai()
