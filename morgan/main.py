@@ -3,7 +3,7 @@ from _ spy.vitollino.main import Inventario as inv
 PAISAGEM = "https://pngimage.net/wp-content/uploads/2018/06/fundo-paisagem-png.png/"
 THOR = "https://pngmafia.net/image/2019/01/Thor-10-min.png"
 CAMPO = "https://png.pngtree.com/element_origin_min_pic/16/09/08/2157d1695243d31.jpg"
-TIANA = "https://upload.wikimedia.org/wikipedia/ru/5/55/Princess-tiana-disney.jpg"
+TIANA = "http://www.stickpng.com/assets/images/5a96849c9fc609199d0fefaa.png"
 def funcoes ( ):
     Paisagem = Cena (img =PAISAGEM)
     Campo = Cena (img =CAMPO)
