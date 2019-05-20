@@ -20,3 +20,4 @@ def funcoes ( ):
     
     Campo.vai()
 funcoes()
+    
