@@ -48,3 +48,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon May 20 2019 11:06:15.253 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  oi():
+       ^
+SyntaxError: invalid syntax
+'''},
