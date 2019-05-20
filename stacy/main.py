@@ -12,10 +12,10 @@ def oi ():
     vulcao.direita = Mar
     bart_Simpson = Elemento (img = Bart_Simpson, tit="Oi, eu sou o Bart!", style = dict(left= 150, top=60, width=60, height=200))
     bart_Simpson.entra(mar)
-    falaBart=Texto(Mar,"E aí, estamos nas Ilhas Maldivas! Nem sei como consegui parar aqui.")
+    falaBart=Texto(mar,"E aí, estamos nas Ilhas Maldivas! Nem sei como consegui parar aqui.")
     furia_da_Noite = Elemento (img = Furia_da_Noite, tit="Olá, sou o Furia da Noite", style = dict(left= 150, top=60, width=60, height=200))
     furia_da_Noite.entra(vulcao)
-    falaFuria=Texto(Vulcao,"Estou animado pra poder sobrevoar e ver o que acontece lá dentro!")
+    falaFuria=Texto(vulcao,"Estou animado pra poder sobrevoar e ver o que acontece lá dentro!")
     mar.vai()
     falaBart.vai()
 oi()
