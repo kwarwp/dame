@@ -180,3 +180,10 @@ Traceback (most recent call last):
     self.cena.elt <= Popup.POP.popup
 AttributeError: 'str' object has no attribute 'elt'
 '''},
+{'date': 'Mon May 20 2019 11:00:33.27 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  bart_Simpson = Elemento (img = Bart_Simpson, tit"Oi, eu sou o Bart!", style = dict(left= 150, top=60, width=60, height=200))
+                                                   ^
+SyntaxError: invalid syntax
+'''},
