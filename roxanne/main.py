@@ -8,25 +8,25 @@ PLANETA = "https://images.vexels.com/media/users/3/152418/isolated/preview/09836
 THANOS ="https://pngmafia.net/image/2019/01/thanos_0_0-min.png"
 PRAIA = "https://png.pngtree.com/element_origin_min_pic/16/06/25/08576dd5fd8dd56.jpg"
 def oi ():
-    jogo = Cena(img = CAMPO)
-    terra = Cena(img = PLANETA)
+    jogo = Cena(img=CAMPO)
+    terra = Cena(img=PLANETA)
     jogo.esquerda = PLANETA
     terra.direita = PLANETA
-    tony=Elemento(img = HOMEM_DE_FERRO , tit="TONY STARK" , style=dict (left= 150,top=160,width=60,height=200))
+    tony=Elemento(img=HOMEM_DE_FERRO , tit="TONY STARK" , style=dict (left= 150,top=160,width=60,height=200))
     tony.entra(paisagem)
     falatony= Texto(paisagem, "Eu sou o homem de ferro")
     tony = falatony.vai
     jogo.vai
-    marte = Cena(img = PLANETA)
-    verde = Cena(img = CAMPO)
-    lazer = Cena(img = PRAIA)
+    marte = Cena(img=PLANETA)
+    verde = Cena(img=CAMPO)
+    lazer = Cena(img=PRAIA)
     marte.esquerda = CAMPO
     lazer.direita = CAMPO
     marte.direita = PRAIA
     verde.esquerda = PRAIA
-    steve=Elemento(img = CAPITAO_AMERICA , tit= "steve" , style=dict (left= 150,top=160,width=60,height=200))
+    steve=Elemento(img=CAPITAO_AMERICA , tit= "steve" , style=dict (left= 150,top=160,width=60,height=200))
     steve.entra(terra)
     falastve= Texto(PLANETA, "Eu vim te salvar")
     steve = falasteve.vai
-    marte.vai
+    marte.vai()
     
