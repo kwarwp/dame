@@ -9,7 +9,7 @@ def oi ():
     paris = Cena(img = CIDADE)
     galaxia.esquerda = paris
     paris.direita = galaxia 
-    danvers=Elemento(img = CAPITA_MARVEL , tit="CAROL DANVERS" , style=dict (left=10,top=40,widht=40,height=40))
+    danvers=Elemento(img = CAPITA_MARVEL , tit="CAROL DANVERS" , style=dict (left=10,top=40,widht=40,height=10))
     danvers.entra(galaxia)
     faladanvers= Texto(galaxia, "Eu sou a Capita Marvel")
     faladanvers.vai()
