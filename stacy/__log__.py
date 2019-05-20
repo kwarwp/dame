@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
                                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon May 20 2019 10:27:34.682 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  Furia_da_Noite = Elemento (img = Furia da Noite, tit"Olá, sou o Furia da Noite", Style = dict(left=150, top=60, weith=60, heith=200))
+                                          ^
+SyntaxError: invalid syntax
+'''},
