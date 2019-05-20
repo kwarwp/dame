@@ -11,7 +11,7 @@ def funcoes ( ):
     Paisagem.esquerda = Campo
     Thor = Elemento (img =THOR,tit= "Capitão",style =dict (left=150,top=160,width=60,height=200))
     Thor.entra(Paisagem)
-    eThor=Texto(Paisagem,"Olá, vim de Asgard e caí nessa praia. Sou Thor, Deus do Trovão e filho de Odin")
+    eThor=Texto(Paisagem,"Olá, vim de Asgard e caí aqui. Sou Thor, Deus do Trovão e filho de Odin")
     Thor=eThor.vai
     Tiana = Elemento (img =TIANA,tit= "Tiana",style=dict(left=150,top=160,width=60,height=200))
     Tiana.entra(Campo)
