@@ -17,17 +17,16 @@ def oi ():
     falatony= Texto(paisagem, "Eu sou o homem de ferro")
     tony = falatony.vai
     jogo.vai
-    oi()
-    terra = Cena(img = PLANETA)
-    jogo = Cena(img = CAMPO)
+    marte = Cena(img = PLANETA)
+    verde = Cena(img = CAMPO)
     lazer = Cena(img = PRAIA)
-    terra.esquerda = CAMPO
+    marte.esquerda = CAMPO
     lazer.direita = CAMPO
-    terra.direita = lazer 
-    jogo.esquerda = PRAIA
+    marte.direita = PRAIA
+    verde.esquerda = PRAIA
     steve=Elemento(img = CAPITAO_AMERICA , tit= "steve" , style=dict (left= 150,top=160,width=60,height=200))
     steve.entra(terra)
-    falastve= Texto(planeta, "Eu vim te salvar")
+    falastve= Texto(PLANETA, "Eu vim te salvar")
     steve = falasteve.vai
-    terra.vai
+    marte.vai
     
