@@ -24,8 +24,8 @@ def oi ():
     lazer.direita = CAMPO
     marte.direita = PRAIA
     verde.esquerda = PRAIA
-    steve=Elemento(img=CAPITAO_AMERICA , tit= "steve" , style=dict (left= 150,top=160,width=60,height=200))
-    steve.entra(terra)
+    steve=Elemento(img=CAPITAO_AMERICA , tit="steve" , style=dict (left= 150,top=160,width=60,height=200))
+    steve.entra(marte)
     falastve= Texto(PLANETA, "Eu vim te salvar")
     steve = falasteve.vai
     marte.vai()
