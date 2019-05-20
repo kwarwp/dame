@@ -83,3 +83,10 @@ SyntaxError: invalid syntax
                                                                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon May 20 2019 10:50:06.435 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  falamorcego= Texto(paisagem"eu vou te pegar pinguim"
+                              ^
+SyntaxError: invalid syntax
+'''},
