@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
                                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon May 20 2019 10:25:49.367 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  falatony= Texto(paisagem, ("Eu sou o homem de ferro")
+                                                             ^
+SyntaxError: invalid syntax
+'''},
