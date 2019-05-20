@@ -55,3 +55,10 @@ SyntaxError: invalid syntax
                                                                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon May 20 2019 10:47:08.476 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  BATMAN = (img = BATMAN , tit = "BATMAN", style=dict (left=150,top=160,width=60,height=200))
+                                                                                             ^
+SyntaxError: invalid syntax
+'''},
