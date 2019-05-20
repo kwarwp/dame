@@ -34,3 +34,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon May 20 2019 11:02:53.256 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  def oi()
+  ^
+IndentationError: unexpected indent
+'''},
