@@ -1,6 +1,6 @@
 # dame.libby.main.py
 from _spy.vitollino.main import Cena,Texto,Elemento
-CAPITA_MARVEL = "https://banner2.kisspng.com/20180509/sxq/kisspng-carol-danvers-iron-man-wanda-maximoff-captain-marv-5af2fefe4a57b4.4959879015258744303045.jpg"
+CAPITA_MARVEL = "https://banner2.kisspng.com/20180622/ufu/kisspng-carol-danvers-marvel-vs-capcom-infinite-superher-carol-danvers-5b2cbdaf290522.808876011529658799168.jpg"
 ESPACO = "https://ciencianautas.com/wp-content/uploads/2016/12/wallpapers_kate_beckinsale_planet_earth_antarctica_hd_2560x1024_interesting_places.jpg"
 HOMEM_DE_FERRO = "https://cache.popcultcha.com.au/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/h/o/hotmms528d30-avengers-endgame-iron-man-mark-85-die-cast-hot-toys-action-figure-10.1554444212.jpg"
 CIDADE = "http://danibrasil.com/wp-content/uploads/2015/02/paris-night.jpg"
