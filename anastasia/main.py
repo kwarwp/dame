@@ -26,7 +26,7 @@ TEXTO = """<div style="width:100%; text-align: center;">
     membrana, denominada de nucleoide.
     """
 
-class Livro:
+class Dna:
     def __init__(self, jogo=None, pagina = None):
         self.livro = Cena(LIVRO)
         self.texto_da_pagina_do_livro = Codigo(
@@ -37,4 +37,4 @@ class Livro:
         
         
 if __name__ == "__main__":
-    Livro()
+    Dna()
