@@ -1,5 +1,7 @@
 # dame.anastasia.main.py
-from spy.vittolino.main import Cena, Codigo
+from spy.vittolino.main import Cena, Codigo, STYLE
+STYLE["width"] = 900
+STYLE["height"] = "650px"
 LIVRO = "https://i.imgur.com/sI177hV.jpg"
 PAGINA = "https://i.imgur.com/YqUFpx4.jpg"
 
