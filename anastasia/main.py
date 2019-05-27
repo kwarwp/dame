@@ -25,7 +25,7 @@ TEXTO = """<div style="width:100%; text-align: center;">
     """
 
 class Livro:
-    def __init__(self, jogo, pagina = None):
+    def __init__(self, jogo=None, pagina = None):
         self.livro = Cena(LIVRO)
         self.texto_da_pagina_do_livro = Codigo(
             codigo="", topo=TEXTO,
