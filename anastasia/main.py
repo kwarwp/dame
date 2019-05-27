@@ -1,5 +1,5 @@
 # dame.anastasia.main.py
-from spy.vittolino.main import Cena, Codigo, STYLE
+from _spy.vitollino.main import Cena, Codigo, STYLE
 STYLE["width"] = 900
 STYLE["height"] = "650px"
 LIVRO = "https://i.imgur.com/sI177hV.jpg"
@@ -32,7 +32,7 @@ class Livro:
         self.texto_da_pagina_do_livro = Codigo(
             codigo="", topo=TEXTO,
             style=dict(left=440, top=20, width=380))
-
+        self.texto_da_pagina_do_livro.entra(self.livro)
         self.livro.vai()
         
         
