@@ -187,3 +187,26 @@ Traceback (most recent call last):
     codigo = win.hljs.highlight("python", codigo)
 AttributeError: no attribute hljs for [object Window]
 '''},
+{'date': 'Tue Oct 20 2009 00:12:52.919 GMt+0700 (Horário de Verão de Bangladesh) -X- SuPyGirls -X-',
+'error': '''sala_do_jogo.A.norte <_spy.vitollino.main.Sala object> <_spy.vitollino.main.Cena object> https://i.imgur.com/aLEjWgB.png
+Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 150
+    main(grace)
+  module <module> line 146
+    return Livro(bry)
+  module <module> line 90
+    self.texto = texto = Codigo(
+  module _spy.vitollino.main line 514
+    codigo = win.hljs.highlight("python", codigo)
+AttributeError: no attribute hljs for [object Window]
+'''},
