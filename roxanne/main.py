@@ -12,11 +12,11 @@ def oi ():
     terra = Cena(img=PLANETA)
     jogo.esquerda = PLANETA
     terra.direita = PLANETA
-    tony=Elemento(img=HOMEM_DE_FERRO , tit="TONY STARK" , style=dict (left= 150,top=160,width=60,height=200))
+    tony=Elemento(img=HOMEM_DE_FERRO , tit="TONY STARK", style=dict (left= 150,top=160,width=60,height=200))
     tony.entra(paisagem)
     falatony= Texto(paisagem, "Eu sou o homem de ferro")
     tony = falatony.vai
-    jogo.vai
+    jogo.vai()
     marte = Cena(img=PLANETA)
     verde = Cena(img=CAMPO)
     lazer = Cena(img=PRAIA)
