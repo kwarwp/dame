@@ -256,3 +256,10 @@ Traceback (most recent call last):
     inv.bota(self.amilase)
 AttributeError: 'module' object has no attribute 'bota'
 '''},
+{'date': 'Tue Jul 02 2019 19:00:12.403 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module amilase.main line 13
+  self.cola = Elemento(COLA, tit="Cola Glicosada", drop={"Amilase Sintética": self.abre},
+                                                                                                                                                                   ^
+SyntaxError: invalid syntax
+'''},
