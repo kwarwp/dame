@@ -1,6 +1,7 @@
 # dame.danae.main.py
 from grace.main import main as grace
 from _spy.vitollino.main import Codigo
+from amilase.main import Amilase
 DNA = "https://i.imgur.com/tEtZk2X.jpg"
 TRANCA = """Esta Porta Está Trancada. 
 Na verdade uma cola está segurando a maçaneta. Na maçaneta está escrito: Solvente amilase."""
@@ -84,6 +85,7 @@ class Livro:
         _livro_aberto = "https://i.imgur.com/sI177hV.jpg"
         self.casa = casa()
         self.casa.vit.i.inicia()
+        Amilase(self.casa.vit)
         livro = self.casa.vit.a(_livro_fechado, "caderno de notas",
             style=dict(left=280, top=500, width=60, height="60px"))
         cena_livro = self.casa.vit.c(_livro_aberto, PaginaAnterior(self), self)
