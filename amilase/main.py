@@ -9,8 +9,6 @@ class Amilase:
     def __init__(self, vit):
         self.vit = vit
         self.porta = vit.sala.C.sul
-        self.aviso = vit.n(porta, TRANCA)
-        porta.meio = self
         self.amilase = Elemento(AMILASE, tit="Amilase Sintética", drag=True)
         self.cola = Elemento(COLA, tit="Cola Glicosada", drop={"Amilase Sintética": self.abre})
         inv.bota(self.amilase)
