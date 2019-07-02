@@ -2,7 +2,8 @@
 from grace.main import main as grace
 from _spy.vitollino.main import Codigo
 DNA = "https://i.imgur.com/tEtZk2X.jpg"
-
+TRANCA = """Esta Porta Está Trancada. 
+Na verdade uma cola está segurando a maçaneta. Na maçaneta está escrito: Solvente amilase."""
 TEXTO = ["""<div style="width:100%; text-align: center;">
 <H2>DIÁRIO DE EMERGÊNCIA</H2>
 <br>
@@ -104,7 +105,7 @@ class Livro:
         class Aviso:
             def __init__(self, vit):
                 porta = vit.sala.C.sul
-                self.aviso = vit.n(porta, "Esta Porta Está Trancada")
+                self.aviso = vit.n(porta, TRANCA)
                 porta.meio = self
             def vai(self, *_):
                 self.aviso.vai()
