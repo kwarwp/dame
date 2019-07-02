@@ -10,7 +10,8 @@ class Amilase:
         self.vit = vit
         self.porta = vit.sala.C.sul
         self.amilase = Elemento(AMILASE, tit="Amilase Sintética", drag=True)
-        self.cola = Elemento(COLA, tit="Cola Glicosada", drop={"Amilase Sintética": self.abre})
+        self.cola = Elemento(COLA, tit="Cola Glicosada", drop={"Amilase Sintética": self.abre},
+        cena=self.porta, x=500, y=300, w=100, h=100, style={"opacity"=.5})
         inv.bota(self.amilase)
         
     def abre(self, *_):
