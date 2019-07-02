@@ -1,6 +1,6 @@
 # dame.amilase.main.py
 from elemento.main import Elemento
-from _spy.vitollino.main import INVENTARIO as inv
+from _spy.vitollino.main import  Cena,INVENTARIO as inv
 AMILASE = "https://i.imgur.com/6sPzHr4.png"
 COLA = "https://i.imgur.com/fUmF8X9.png"
 
@@ -15,4 +15,6 @@ class Amilase:
         inv.bota(self.amilase)
         
     def abre(self, *_):
-        self.porta.meio =  self.vit.sala.D.sul       
+        self.porta.meio =  self.vit.sala.D.sul 
+        fantasma= Cena()
+        self.cola.entra(fantasma)
