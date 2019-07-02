@@ -1,6 +1,6 @@
 # dame.amilase.main.py
 from elemento.main import Elemento
-from _spy.vitollino import INVENTARIO as inv
+from _spy.vitollino.main import INVENTARIO as inv
 AMILASE = "https://i.imgur.com/6sPzHr4.png"
 COLA = "https://i.imgur.com/fUmF8X9.png"
 
