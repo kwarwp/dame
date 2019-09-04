@@ -1,0 +1,8 @@
+
+{'date': 'Wed Sep 04 2019 10:12:07.817 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  from_spy.vitollino.main import Cena, Elemento,
+                                                 ^
+SyntaxError: invalid syntax
+'''},
