@@ -14,3 +14,10 @@ Exception: <SyntaxError: Unexpected token {>
 'error': '''
 Exception: <SyntaxError: Unexpected token {>
 '''},
+{'date': 'Wed Sep 04 2019 10:13:54.452 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  def_int_(self):
+                 ^
+SyntaxError: invalid syntax
+'''},
