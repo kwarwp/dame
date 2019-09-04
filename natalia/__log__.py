@@ -53,3 +53,10 @@ SyntaxError: invalid syntax
 'error': '''
 Exception: <SyntaxError: Unexpected token {>
 '''},
+{'date': 'Wed Sep 04 2019 10:17:37.780 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  oi.vai ()
+  ^
+IndentationError: unexpected indent
+'''},
