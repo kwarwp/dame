@@ -21,3 +21,10 @@ Exception: <SyntaxError: Unexpected token {>
                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 04 2019 10:14:20.589 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  def_int_(self):
+                 ^
+SyntaxError: invalid syntax
+'''},
