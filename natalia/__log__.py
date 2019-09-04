@@ -6,3 +6,7 @@
                                                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 04 2019 10:12:25.841 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <SyntaxError: Unexpected token {>
+'''},
