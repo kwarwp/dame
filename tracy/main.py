@@ -9,5 +9,5 @@ class arroz():
     soldado.entra(gerra)
     guerra.vai()
 arroz()    
-    soldado.anda()
+    soldado.anda(guerra)
     soldado.atira()
