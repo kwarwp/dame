@@ -1,11 +1,13 @@
 # dame.tracy.main.py
 from _spy.vitollino.main import Cena,Elemento
 from _spy.vitollino.main import INVENTARIO as inv
-PRAIA="https://img.freepik.com/fotos-gratis/bela-praia-tropical-e-mar-com-coqueiro-na-ilha-paradisiaca_74190-2206.jpg?size=626&ext=jpg"
-RYU="https://http2.mlstatic.com/kit-display-street-fighter-c-8-pecas-painel-20-x-150-mt-D_NQ_NP_679648-MLB31207888566_062019-F.jpg"
+GUERRA="https://st4.depositphotos.com/1004410/25367/i/1600/depositphotos_253674464-stock-photo-war-memorial-at-stonehaven-in.jpg"
+SOLDADO="https://png.pngtree.com/png-clipart/20190603/original/pngtree-sniper-png-image_435711.jpg"
 class arroz():
-    praia=Cena(img=PRAIA)
-    ryu=Elemento(img=RYU)
-    ryu.entra(praia)
-    praia.vai()
+    guerra=Cena(img=GUERRA)
+    soldado=Elemento(img=SOLDADO)
+    soldado.entra(gerra)
+    guerra.vai()
 arroz()    
+    soldado.anda()
+    soldado.atira()
