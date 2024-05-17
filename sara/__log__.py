@@ -15,3 +15,10 @@
     lado1 = input(int('Coloque um número'))
 ValueError: invalid literal for int() with base 10: 'Coloque um número'
 '''},
+{'date': 'Fri May 17 2024 17:31:16.17 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  print("essa e a resposta",resposta
+       ^
+SyntaxError: Unbalanced bracket (
+'''},
